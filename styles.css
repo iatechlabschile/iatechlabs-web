@@ -570,10 +570,10 @@ h1 span, .accent { color: var(--orange); }
 /* ---- 26. Contact / Final CTA ----------------------------- */
 .final-cta {
   margin: 64px auto 32px;
-  padding: 46px;
+  padding: 52px;
   display: grid;
-  grid-template-columns: 1fr 0.85fr;
-  gap: 46px;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
   align-items: start;
   background: var(--card-bg);
   border: 1px solid var(--line);
@@ -582,41 +582,77 @@ h1 span, .accent { color: var(--orange); }
 }
 .final-cta:hover { background: var(--card-hover); border-color: rgba(255,255,255,.16); }
 .final-cta h2 {
-  font-size: clamp(30px, 3.8vw, 50px);
+  font-size: clamp(28px, 3.4vw, 46px);
   line-height: 1.08;
   letter-spacing: -0.05em;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
-.final-cta > div > p { color: var(--muted); line-height: 1.65; margin-bottom: 6px; }
+.cta-desc { color: var(--muted); line-height: 1.65; margin-bottom: 6px; }
 .pricing-hint {
   font-size: 13px;
-  color: rgba(255,255,255,.46);
+  color: rgba(255,255,255,.42);
   font-style: italic;
-  margin-top: 6px !important;
+  margin-top: 6px;
+  margin-bottom: 0;
 }
 
-/* ---- 27. Benefits list ----------------------------------- */
+/* ---- 26b. "Otros servicios" hint ------------------------- */
+.otros-hint {
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: rgba(255,255,255,.42);
+}
+.otros-hint a {
+  color: var(--blue);
+  transition: color 200ms ease;
+  margin-left: 4px;
+}
+.otros-hint a:hover { color: #60a5ff; }
+
+/* ---- 27. Benefits list — con iconos ---------------------- */
+.cta-right { align-self: center; }
+.benefits-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.36);
+  margin: 0 0 20px;
+}
 .benefits {
   list-style: none;
   padding: 0; margin: 0;
   display: grid;
-  gap: 16px;
-  color: rgba(255,255,255,.82);
-  align-self: center;
+  gap: 14px;
 }
-.benefits li { position: relative; padding-left: 34px; line-height: 1.5; }
-.benefits li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: #79a8ff;
-  width: 20px;
-  height: 20px;
-  border: 1px solid rgba(121,168,255,.5);
-  border-radius: 999px;
-  display: inline-grid;
+.benefits li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  line-height: 1.45;
+}
+.benefit-icon-wrap {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: grid;
   place-items: center;
-  font-size: 11px;
+  border-radius: 10px;
+}
+.benefit-icon-wrap.blue   { color: var(--blue);   background: rgba(31,122,255,.12); }
+.benefit-icon-wrap.orange { color: var(--orange); background: rgba(255,107,24,.12); }
+.benefit-icon-wrap.violet { color: var(--violet); background: rgba(139,92,246,.12); }
+.benefit-icon-wrap svg {
+  width: 18px; height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* ---- 28. Premium form ------------------------------------ */
@@ -771,7 +807,8 @@ h1 span, .accent { color: var(--orange); }
   .stats-row { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: 1fr 1fr; }
 
-  .final-cta { grid-template-columns: 1fr; }
+  .final-cta { grid-template-columns: 1fr; padding: 36px; }
+  .cta-right { border-top: 1px solid var(--line); padding-top: 32px; }
 
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .footer-brand-col { grid-column: 1 / -1; }
@@ -797,7 +834,7 @@ h1 span, .accent { color: var(--orange); }
 
   .stats-row { grid-template-columns: 1fr; }
 
-  .final-cta { padding: 28px 22px; }
+  .final-cta { padding: 24px 20px; }
   .form-grid { grid-template-columns: 1fr; }
   .premium-submit { width: 100%; }
 
