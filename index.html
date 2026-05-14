@@ -4,58 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IA TechLabs | Automatización inteligente para empresas</title>
-  <meta name="description" content="IA TechLabs crea automatizaciones inteligentes, chatbots, agendamientos, respuestas IA, datos y reportes para empresas y pymes." />
+  <meta name="description" content="IA TechLabs automatiza procesos, crea chatbots inteligentes y conecta tus herramientas para que tu empresa crezca sin límites. Primera consulta sin costo." />
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://iatechlabs.cl/" />
+  <meta property="og:title"       content="IA TechLabs | Automatización inteligente para empresas" />
+  <meta property="og:description" content="Automatizamos procesos, creamos chatbots y conectamos tus herramientas con IA. Primera consulta sin costo." />
+  <meta property="og:image"       content="https://iatechlabs.cl/assets/logo.png" />
+  <meta property="og:locale"      content="es_CL" />
+  <meta name="twitter:card"       content="summary_large_image" />
+  <meta name="twitter:title"      content="IA TechLabs | Automatización inteligente para empresas" />
+  <meta name="twitter:description" content="Automatizamos procesos, creamos chatbots y conectamos tus herramientas con IA." />
+  <meta name="twitter:image"      content="https://iatechlabs.cl/assets/logo.png" />
+
   <link rel="icon" href="assets/logo.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <div class="page-glow page-glow-blue"></div>
   <div class="page-glow page-glow-orange"></div>
 
-  <header class="site-header">
-    
-<a class="brand brand-clean" href="#inicio" aria-label="IA TechLabs">
-  
-<svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
-  <defs>
-    <linearGradient id="brandGradient" x1="6" y1="8" x2="42" y2="40">
-      <stop offset="0" stop-color="#1f7aff"/>
-      <stop offset="1" stop-color="#ff6b18"/>
-    </linearGradient>
-  </defs>
-  <path d="M24 4 41 14v20L24 44 7 34V14L24 4Z" fill="none" stroke="url(#brandGradient)" stroke-width="2"/>
-  <circle cx="24" cy="14" r="3.5" fill="#020713" stroke="#7ab5ff" stroke-width="2"/>
-  <circle cx="14" cy="30" r="3.5" fill="#020713" stroke="#7ab5ff" stroke-width="2"/>
-  <circle cx="34" cy="30" r="3.5" fill="#020713" stroke="#ff8a3d" stroke-width="2"/>
-  <circle cx="24" cy="35" r="3" fill="#020713" stroke="#1f7aff" stroke-width="2"/>
-  <path d="M21 16.5 16.5 27M27 16.5 31.5 27M17.5 30h13M24 17v15" stroke="rgba(255,255,255,.7)" stroke-width="1.7" stroke-linecap="round"/>
-</svg>
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header" id="siteHeader">
 
-  <span class="brand-text">
-    <strong>IA<span>TechLabs</span></strong>
-    <small>Automatización IA</small>
-  </span>
-</a>
-
+    <a class="brand-clean" href="#inicio" aria-label="IA TechLabs">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <defs>
+          <linearGradient id="brandGradient" x1="6" y1="8" x2="42" y2="40">
+            <stop offset="0" stop-color="#1f7aff"/>
+            <stop offset="1" stop-color="#ff6b18"/>
+          </linearGradient>
+        </defs>
+        <path d="M24 4 41 14v20L24 44 7 34V14L24 4Z" fill="none" stroke="url(#brandGradient)" stroke-width="2"/>
+        <circle cx="24" cy="14" r="3.5" fill="#020713" stroke="#7ab5ff" stroke-width="2"/>
+        <circle cx="14" cy="30" r="3.5" fill="#020713" stroke="#7ab5ff" stroke-width="2"/>
+        <circle cx="34" cy="30" r="3.5" fill="#020713" stroke="#ff8a3d" stroke-width="2"/>
+        <circle cx="24" cy="35" r="3" fill="#020713" stroke="#1f7aff" stroke-width="2"/>
+        <path d="M21 16.5 16.5 27M27 16.5 31.5 27M17.5 30h13M24 17v15" stroke="rgba(255,255,255,.7)" stroke-width="1.7" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">
+        <strong>IA<span>TechLabs</span></strong>
+        <small>Automatización IA</small>
+      </span>
+    </a>
 
     <nav class="nav" aria-label="Navegación principal">
       <a href="#inicio">Inicio</a>
       <a href="#soluciones">Soluciones</a>
-      <a href="#servicios">Servicios</a>
       <a href="#nosotros">Nosotros</a>
+      <a href="#faq">FAQ</a>
       <a href="#contacto">Contacto</a>
     </nav>
 
     <a class="header-cta" href="#contacto">Hablemos</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
   </header>
 
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#inicio"     class="mobile-link">Inicio</a>
+    <a href="#soluciones" class="mobile-link">Soluciones</a>
+    <a href="#nosotros"   class="mobile-link">Nosotros</a>
+    <a href="#faq"        class="mobile-link">FAQ</a>
+    <a href="#contacto"   class="mobile-link mobile-cta">Hablemos →</a>
+  </div>
+
   <main>
+
+    <!-- ============================================================
+         HERO — #inicio
+    ============================================================ -->
     <section id="inicio" class="hero section">
       <div class="hero-content reveal">
-        <p class="eyebrow">IA TechLabs</p>
+        <p class="eyebrow">Soluciones IA para empresas chilenas</p>
         <h1>Automatización inteligente para empresas</h1>
         <p class="hero-copy">
-          Conectamos tus herramientas, automatizamos tareas repetitivas y creamos experiencias inteligentes para que tu negocio crezca sin límites.
+          Conectamos tus herramientas, automatizamos tareas repetitivas y creamos
+          experiencias inteligentes para que tu negocio crezca sin límites.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#contacto">Hablemos</a>
@@ -73,104 +108,252 @@
         </div>
       </div>
     </section>
-<section id="soluciones" class="section reveal">
+
+    <!-- ============================================================
+         SOLUCIONES — #soluciones
+    ============================================================ -->
+    <section id="soluciones" class="section reveal">
       <div class="section-heading">
         <p class="eyebrow">Soluciones para cada proceso de tu negocio</p>
         <h2>Automatizamos lo que impulsa tu negocio.</h2>
       </div>
 
       <div class="cards four">
-        <article class="card"><div class="icon blue"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7A8.4 8.4 0 0 1 4 11.5a8.5 8.5 0 1 1 17 0Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg></div><h3>Chatbots Inteligentes</h3><p>Atención automática en canales como web, Telegram, WhatsApp, Instagram y más.</p></article>
-        <article class="card"><div class="icon orange"><svg viewBox="0 0 24 24"><path d="M8 2v4M16 2v4M3 10h18"/><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg></div><h3>Agendamiento y Reservas</h3><p>Automatizamos reservas, reuniones, salas y confirmaciones sin intervención manual.</p></article>
-        <article class="card"><div class="icon violet"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h8l-1 8 11-14h-8l1-6Z"/></svg></div><h3>Automatización de Procesos</h3><p>Conectamos herramientas, bases de datos y flujos internos para reducir trabajo repetitivo.</p></article>
-        <article class="card"><div class="icon orange"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg></div><h3>Datos y Reportes</h3><p>Ordenamos información y generamos reportes para tomar mejores decisiones.</p></article>
+
+        <article class="card">
+          <div class="icon blue">
+            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7A8.4 8.4 0 0 1 4 11.5a8.5 8.5 0 1 1 17 0Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>
+          </div>
+          <h3>Chatbots Inteligentes</h3>
+          <p>Atención automática en canales como web, Telegram, WhatsApp, Instagram y más.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon orange">
+            <svg viewBox="0 0 24 24"><path d="M8 2v4M16 2v4M3 10h18"/><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+          </div>
+          <h3>Agendamiento y Reservas</h3>
+          <p>Automatizamos reservas, reuniones, salas y confirmaciones sin intervención manual.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon violet">
+            <svg viewBox="0 0 24 24"><path d="M13 2 3 14h8l-1 8 11-14h-8l1-6Z"/></svg>
+          </div>
+          <h3>Automatización de Procesos</h3>
+          <p>Conectamos herramientas, bases de datos y flujos internos para reducir trabajo repetitivo.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon orange">
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+          </div>
+          <h3>Datos y Reportes</h3>
+          <p>Ordenamos información y generamos reportes para tomar mejores decisiones.</p>
+        </article>
+
       </div>
     </section>
-<section id="nosotros" class="section process reveal">
+
+    <!-- ============================================================
+         NOSOTROS — #nosotros
+    ============================================================ -->
+    <section id="nosotros" class="section reveal">
       <div class="section-heading">
-        <p class="eyebrow">Un proceso simple y efectivo</p>
-        <h2>Así trabajamos contigo.</h2>
+        <p class="eyebrow">Quiénes somos</p>
+        <h2>Un equipo enfocado en resultados reales.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Somos un equipo chileno especializado en automatización inteligente e infraestructura tecnológica. Creemos que la tecnología debe adaptarse a tu negocio, no al revés — por eso cada solución parte desde un diagnóstico profundo de tus procesos reales.</p>
+          <p>Trabajamos con empresas de todos los tamaños: desde PYMES que buscan su primera automatización hasta organizaciones que necesitan integrar múltiples sistemas bajo una misma lógica eficiente y escalable.</p>
+        </div>
+        <div class="stats-row">
+          <div class="stat-item">
+            <strong>1+</strong>
+            <span>Año de experiencia</span>
+          </div>
+          <div class="stat-item">
+            <strong>&lt; 24h</strong>
+            <span>Respuesta inicial</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-divider">
+        <p class="eyebrow">Cómo trabajamos</p>
+        <h3>Así es nuestro proceso.</h3>
       </div>
 
       <div class="steps">
         <article>
-          <span><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
+          <span>
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          </span>
           <h3>Descubrimos</h3>
           <p>Analizamos tus procesos y detectamos oportunidades de automatización.</p>
         </article>
         <article>
-          <span><svg viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="2"/><rect x="15" y="3" width="6" height="6" rx="2"/><rect x="9" y="15" width="6" height="6" rx="2"/><path d="M9 6h6M12 9v6"/></svg></span>
+          <span>
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="2"/><rect x="15" y="3" width="6" height="6" rx="2"/><rect x="9" y="15" width="6" height="6" rx="2"/><path d="M9 6h6M12 9v6"/></svg>
+          </span>
           <h3>Diseñamos</h3>
           <p>Creamos el flujo de trabajo a medida usando IA y las mejores herramientas.</p>
         </article>
         <article>
-          <span><svg viewBox="0 0 24 24"><path d="M4.5 16.5 3 21l4.5-1.5"/><path d="M9 15 5 11l5-5c3-3 7-4 11-3-1 4-2 8-5 11l-5 5-4-4Z"/><circle cx="15" cy="9" r="2"/></svg></span>
+          <span>
+            <svg viewBox="0 0 24 24"><path d="M4.5 16.5 3 21l4.5-1.5"/><path d="M9 15 5 11l5-5c3-3 7-4 11-3-1 4-2 8-5 11l-5 5-4-4Z"/><circle cx="15" cy="9" r="2"/></svg>
+          </span>
           <h3>Implementamos</h3>
           <p>Integramos todo en tu negocio de forma segura y sin afectar tu operación.</p>
         </article>
         <article>
-          <span><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-7"/></svg></span>
+          <span>
+            <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-7"/></svg>
+          </span>
           <h3>Optimizamos</h3>
           <p>Monitoreamos, medimos resultados y mejoramos continuamente.</p>
         </article>
       </div>
     </section>
 
-    
-    
-<section id="contacto" class="final-cta reveal">
-  <div>
-    <p class="eyebrow">Hablemos de tu próximo avance</p>
-    <h2>La automatización correcta puede cambiar completamente tu operación.</h2>
-    <p>Cuéntanos qué estás construyendo o qué desafío quieres resolver y exploremos juntos cómo potenciarlo con IA.</p>
+    <!-- ============================================================
+         FAQ — #faq
+    ============================================================ -->
+    <section id="faq" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2>Lo que nos preguntan antes de empezar.</h2>
+      </div>
+      <div class="faq-list">
 
-    <form class="premium-form">
-      <div class="form-grid">
-        <input type="text" placeholder="Nombre" />
-        <input type="text" placeholder="Empresa" />
+        <details class="faq-item">
+          <summary>¿Cuánto tiempo tarda una implementación?</summary>
+          <p>Depende de la complejidad. Un chatbot básico puede estar listo en 1–2 semanas. Una automatización de procesos completa suele tomar entre 2 y 6 semanas. Siempre te damos un plazo claro antes de comenzar.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Necesito cambiar mis sistemas actuales?</summary>
+          <p>No. Trabajamos integrando las herramientas que ya usas — Google Workspace, CRMs, ERPs, bases de datos o plataformas propias. El objetivo es adaptarnos a tu entorno, no al revés.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Con qué herramientas trabajan?</summary>
+          <p>Usamos n8n, Make, OpenAI, Anthropic Claude, Telegram, WhatsApp Business API, Google Sheets, Notion, Airtable y más. Elegimos la herramienta correcta según tu caso específico.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Trabajan con empresas pequeñas?</summary>
+          <p>Sí. Trabajamos con PYMES, emprendedores y empresas en crecimiento. Las empresas pequeñas son las que más se benefician al automatizar — liberan tiempo operativo sin contratar más personal.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿La primera consulta tiene costo?</summary>
+          <p>No. La primera reunión es sin costo ni compromiso. Analizamos tu caso, te contamos si podemos ayudarte y tú decides si quieres avanzar.</p>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACTO — #contacto
+    ============================================================ -->
+    <section id="contacto" class="final-cta reveal">
+      <div>
+        <p class="eyebrow">Hablemos de tu próximo avance</p>
+        <h2>La automatización correcta puede cambiar completamente tu operación.</h2>
+        <p>Cuéntanos qué estás construyendo o qué desafío quieres resolver, y exploremos juntos cómo potenciarlo con IA.</p>
+        <p class="pricing-hint">Primera consulta sin costo — evaluamos tu caso y te contamos si podemos ayudarte.</p>
+
+        <form
+          class="premium-form"
+          id="contactForm"
+          action="https://formspree.io/f/mbdwqvkr"
+          method="POST"
+          novalidate
+        >
+          <div class="form-grid">
+            <input type="text"  name="nombre"   placeholder="Nombre *"             autocomplete="name"         required />
+            <input type="text"  name="empresa"  placeholder="Empresa"              autocomplete="organization"         />
+          </div>
+          <input   type="email" name="contacto" placeholder="Correo electrónico *" autocomplete="email"        required />
+          <input   type="tel"   name="whatsapp" placeholder="WhatsApp (opcional)"  autocomplete="tel"                  />
+          <textarea             name="mensaje"  placeholder="Descríbenos tu idea o desafío *" required></textarea>
+          <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+          <button type="submit" class="premium-submit">🚀 Empecemos ahora</button>
+        </form>
       </div>
 
-      <input type="text" placeholder="Correo o WhatsApp" />
-
-      <textarea placeholder="Descríbenos tu idea o desafío"></textarea>
-
-      <button type="button" class="premium-submit">🚀 Empecemos ahora</button>
-    </form>
-  </div>
-
-  <ul class="benefits">
-    <li>Automatizaciones adaptadas a tu negocio</li>
-    <li>Procesos más rápidos y eficientes</li>
-    <li>Experiencias inteligentes para tus clientes</li>
-    <li>Escala sin aumentar complejidad operativa</li>
-  </ul>
-</section>
+      <ul class="benefits">
+        <li>Automatizaciones adaptadas a tu negocio</li>
+        <li>Procesos más rápidos y eficientes</li>
+        <li>Experiencias inteligentes para tus clientes</li>
+        <li>Escala sin aumentar complejidad operativa</li>
+        <li>Primera consulta sin costo ni compromiso</li>
+      </ul>
+    </section>
 
   </main>
 
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
   <footer class="footer">
-    <div class="footer-brand">
-<svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
-  <defs>
-    <linearGradient id="brandGradient" x1="6" y1="8" x2="42" y2="40">
-      <stop offset="0" stop-color="#1f7aff"/>
-      <stop offset="1" stop-color="#ff6b18"/>
-    </linearGradient>
-  </defs>
-  <path d="M24 4 41 14v20L24 44 7 34V14L24 4Z" fill="none" stroke="url(#brandGradient)" stroke-width="2"/>
-  <circle cx="24" cy="14" r="3.5" fill="#020713" stroke="#7ab5ff" stroke-width="2"/>
-  <circle cx="14" cy="30" r="3.5" fill="#020713" stroke="#7ab5ff" stroke-width="2"/>
-  <circle cx="34" cy="30" r="3.5" fill="#020713" stroke="#ff8a3d" stroke-width="2"/>
-  <circle cx="24" cy="35" r="3" fill="#020713" stroke="#1f7aff" stroke-width="2"/>
-  <path d="M21 16.5 16.5 27M27 16.5 31.5 27M17.5 30h13M24 17v15" stroke="rgba(255,255,255,.7)" stroke-width="1.7" stroke-linecap="round"/>
-</svg>
-<strong>IA<span>TechLabs</span></strong></div>
-    <div class="footer-links">
-      <a href="mailto:descubre@iatechlabs.cl">descubre@iatechlabs.cl</a>
-      <a href="#" aria-label="Instagram">Instagram</a>
-      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    <div class="footer-inner">
+
+      <div class="footer-brand-col">
+        <div class="footer-brand">
+          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+            <defs>
+              <linearGradient id="brandGradientFooter" x1="6" y1="8" x2="42" y2="40">
+                <stop offset="0" stop-color="#1f7aff"/>
+                <stop offset="1" stop-color="#ff6b18"/>
+              </linearGradient>
+            </defs>
+            <path d="M24 4 41 14v20L24 44 7 34V14L24 4Z" fill="none" stroke="url(#brandGradientFooter)" stroke-width="2"/>
+            <circle cx="24" cy="14" r="3.5" fill="#020713" stroke="#7ab5ff" stroke-width="2"/>
+            <circle cx="14" cy="30" r="3.5" fill="#020713" stroke="#7ab5ff" stroke-width="2"/>
+            <circle cx="34" cy="30" r="3.5" fill="#020713" stroke="#ff8a3d" stroke-width="2"/>
+            <circle cx="24" cy="35" r="3" fill="#020713" stroke="#1f7aff" stroke-width="2"/>
+            <path d="M21 16.5 16.5 27M27 16.5 31.5 27M17.5 30h13M24 17v15" stroke="rgba(255,255,255,.7)" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+          <strong>IA<span>TechLabs</span></strong>
+        </div>
+        <p class="footer-tagline">Automatización inteligente<br>para empresas que quieren crecer.</p>
+      </div>
+
+      <div class="footer-nav-col">
+        <p class="footer-col-title">Navegación</p>
+        <a href="#inicio">Inicio</a>
+        <a href="#soluciones">Soluciones</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+        <a href="servicios.html">Otros servicios</a>
+      </div>
+
+      <div class="footer-contact-col">
+        <p class="footer-col-title">Contacto</p>
+        <a href="mailto:descubre@iatechlabs.cl">descubre@iatechlabs.cl</a>
+        <a href="https://t.me/+56979178023" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://instagram.com/iatechlabs" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://linkedin.com/company/iatechlabs" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 IA TechLabs · Chile</p>
     </div>
   </footer>
+
+  <!-- Botón flotante Telegram -->
+  <a class="float-telegram" href="https://t.me/+56979178023" target="_blank" rel="noopener noreferrer" aria-label="Contactar por Telegram">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true">
+      <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+    </svg>
+    <span>Escríbenos</span>
+  </a>
 
   <script src="script.js"></script>
 </body>
