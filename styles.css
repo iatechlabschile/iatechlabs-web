@@ -256,54 +256,14 @@ h1 span, .accent { color: var(--orange); }
   pointer-events: none;
 }
 
-/* ---- 15. Automation preview widget ----------------------- */
-.automation-preview {
-  position: relative;
-  width: min(360px, 100%);
-  min-height: 360px;
-  border-radius: 36px;
-  background:
-    radial-gradient(circle at 30% 30%, rgba(31,122,255,.16), transparent 42%),
-    radial-gradient(circle at 80% 75%, rgba(255,107,24,.14), transparent 44%),
-    rgba(255,255,255,.032);
-  border: 1px solid rgba(255,255,255,.09);
-  box-shadow: 0 30px 90px rgba(0,0,0,.28);
-}
-.preview-line {
-  position: absolute;
-  inset: 70px;
-  border: 1px solid rgba(255,255,255,.1);
+/* ---- 15. Hero widget iframe ------------------------------ */
+.hero-widget-frame {
+  width: min(560px, 100%);
+  aspect-ratio: 5 / 6;
+  border: 0;
   border-radius: 28px;
-}
-.preview-node {
-  position: absolute;
-  min-width: 84px;
-  padding: 13px 16px;
-  border-radius: 16px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 14px;
-  color: rgba(255,255,255,.86);
-  background: rgba(255,255,255,.055);
-  border: 1px solid rgba(255,255,255,.11);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-.preview-node.primary {
-  left: 50%; top: 50%;
-  transform: translate(-50%, -50%);
-  background: linear-gradient(135deg, rgba(31,122,255,.2), rgba(255,107,24,.16));
-  border-color: rgba(255,255,255,.18);
-  font-size: 16px;
-}
-.preview-node:nth-child(3) { left: 38px; top: 54px; }
-.preview-node:nth-child(4) { right: 34px; top: 74px; }
-.preview-node.accent {
-  left: 50%; bottom: 42px;
-  transform: translateX(-50%);
-  color: #fff;
-  background: linear-gradient(135deg, rgba(255,107,24,.18), rgba(255,107,24,.08));
-  border-color: rgba(255,107,24,.28);
+  background: transparent;
+  display: block;
 }
 
 /* ---- 16. Buttons ----------------------------------------- */
@@ -922,7 +882,7 @@ h1 span, .accent { color: var(--orange); }
   .brand-mark { width: 38px; height: 38px; }
 
   .hero { padding-top: 12px; padding-bottom: 32px; }
-  .automation-preview { display: none; }
+  .hero-widget-frame { display: none; }
   .hero-copy { font-size: 16px; }
   .btn { width: 100%; justify-content: center; }
 
