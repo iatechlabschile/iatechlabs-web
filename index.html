@@ -13,6 +13,9 @@
   <meta property="og:locale"      content="es_CL" />
   <meta name="twitter:card"       content="summary_large_image" />
   <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -45,8 +48,8 @@
 
     <nav class="nav" aria-label="Navegación principal">
       <a href="#soluciones">Soluciones</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="#nosotros">Nosotros</a>
+      <a href="#como-trabajamos">Cómo trabajamos</a>
+      <a href="#casos">Casos</a>
       <a href="faq.html">FAQ</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -58,11 +61,11 @@
 
   <!-- Mobile menu -->
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <a href="#soluciones"   class="mobile-link">Soluciones</a>
-    <a href="servicios.html" class="mobile-link">Servicios</a>
-    <a href="#nosotros"     class="mobile-link">Nosotros</a>
-    <a href="faq.html"      class="mobile-link">FAQ</a>
-    <a href="#contacto"     class="mobile-link mobile-cta">Agenda tu consulta →</a>
+    <a href="#soluciones"        class="mobile-link">Soluciones</a>
+    <a href="#como-trabajamos"   class="mobile-link">Cómo trabajamos</a>
+    <a href="#casos"             class="mobile-link">Casos</a>
+    <a href="faq.html"           class="mobile-link">FAQ</a>
+    <a href="#contacto"          class="mobile-link mobile-cta">Agenda tu consulta →</a>
   </div>
 
   <main>
@@ -70,15 +73,38 @@
     <!-- HERO -->
     <section id="inicio" class="hero section">
       <div class="hero-content reveal">
-        <p class="eyebrow">Soluciones IA para empresas chilenas</p>
-        <h1>Automatización inteligente para empresas</h1>
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Soluciones IA para empresas chilenas</p>
+        <h1 class="hero-title">
+          Tu negocio <em>funcionando,</em><br>
+          incluso cuando<br>
+          <span class="accent">duermes.</span>
+        </h1>
         <p class="hero-copy">
-          Conectamos tus herramientas, automatizamos tareas repetitivas y creamos
-          experiencias inteligentes para que tu negocio crezca sin límites.
+          Automatizamos lo repetitivo en WhatsApp, Email y tus herramientas internas.
+          Tu equipo deja de hacer trabajo manual y empieza a trabajar en lo que importa.
         </p>
+
+        <div class="hero-proof">
+          <div class="item">
+            <div class="n">10<span class="unit">+</span></div>
+            <div class="l">Años en TI</div>
+          </div>
+          <div class="divider"></div>
+          <div class="item">
+            <div class="n">&lt;&nbsp;24<span class="unit">h</span></div>
+            <div class="l">Respuesta</div>
+          </div>
+          <div class="divider"></div>
+          <div class="item">
+            <div class="n">100<span class="unit">%</span></div>
+            <div class="l">A medida</div>
+          </div>
+        </div>
+
         <div class="hero-actions">
           <a class="btn btn-primary" href="#contacto">Agenda tu consulta gratis</a>
-          <a class="btn btn-secondary" href="#soluciones">Ver soluciones</a>
+          <a class="btn btn-secondary" href="#casos">Ver casos →</a>
+          <span class="micro-disclaimer">30 min · Sin compromiso</span>
         </div>
       </div>
 
@@ -136,6 +162,71 @@
       </div>
     </section>
 
+    <!-- MANIFESTO -->
+    <section class="manifesto reveal">
+      <div class="manifesto-inner">
+        <div class="manifesto-mark">"</div>
+        <div>
+          <p class="manifesto-text">
+            No vendemos automatización por vender. Buscamos <em>oportunidades reales de impacto</em> en tu negocio y tu equipo.
+          </p>
+          <p class="manifesto-sig">
+            <span>— Manifesto IATechLabs</span> · <span class="manifesto-name">Si en la primera reunión no encontramos 3 oportunidades, no facturamos.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASOS EN CURSO -->
+    <section id="casos" class="section reveal">
+      <div class="section-heading">
+        <p class="section-eyebrow"><span class="eyebrow-dot"></span>En producción · 2026</p>
+        <h2>Lo que estamos <em class="accent-italic">construyendo</em> ahora.</h2>
+        <p class="section-sub">Casos en curso, con cliente real y métricas en formación.</p>
+      </div>
+
+      <div class="cases-grid">
+        <div class="case-card">
+          <div class="case-top">
+            <span class="case-tag">Cultura · Centro Cultural</span>
+            <span class="case-status">en piloto</span>
+          </div>
+          <div class="case-name">Matucana <em>100</em></div>
+          <p class="case-body">Bot conversacional para atención de público, ticketing y agenda cultural. Integración con WhatsApp + sistema interno para reducir carga del equipo de difusión.</p>
+          <div class="case-metric">
+            <div class="case-metric-n">24/7</div>
+            <div class="case-metric-l">atención automática</div>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-top">
+            <span class="case-tag">Auditoría · B2B</span>
+            <span class="case-status">en piloto</span>
+          </div>
+          <div class="case-name">NBS <em>Auditores</em></div>
+          <p class="case-body">Capacitación de IA al equipo + coaching para el nuevo jefe TI + automatización del proceso de recepción de solicitudes de compra.</p>
+          <div class="case-metric">
+            <div class="case-metric-n">3</div>
+            <div class="case-metric-l">frentes paralelos</div>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-top">
+            <span class="case-tag">Growth · Social Media</span>
+            <span class="case-status running">en producción</span>
+          </div>
+          <div class="case-name">Crecimiento <em>orgánico</em></div>
+          <p class="case-body">Automatización de respuestas y nurturing en Instagram + WhatsApp. Calificación de leads y derivación automática al equipo de ventas.</p>
+          <div class="case-metric">
+            <div class="case-metric-n">+47%</div>
+            <div class="case-metric-l">conversión a lead</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- BROCHURE -->
     <section class="brochure-band reveal">
       <div class="brochure-band-inner">
@@ -181,7 +272,7 @@
         </div>
       </div>
 
-      <div class="process-divider">
+      <div id="como-trabajamos" class="process-divider">
         <p class="eyebrow">Cómo trabajamos</p>
         <h3>Así es nuestro proceso.</h3>
       </div>
