@@ -147,6 +147,28 @@ h1, h2, h3, p { margin-top: 0; }
   transform: translateY(-1px);
 }
 
+/* ---- 8b. Acceso Clientes button ------------------------- */
+.client-access-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+  border: 1px solid rgba(31,122,255,.5);
+  border-radius: 10px;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blue);
+  transition: background 200ms ease, border-color 200ms ease, transform 200ms ease;
+  white-space: nowrap;
+}
+.client-access-btn:hover {
+  background: rgba(31,122,255,.08);
+  border-color: var(--blue);
+  transform: translateY(-1px);
+}
+@media (max-width: 980px) { .client-access-btn { display: none; } }
+
 /* ---- 9. Hamburger button --------------------------------- */
 .hamburger {
   display: none;
